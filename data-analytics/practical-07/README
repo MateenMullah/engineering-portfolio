@@ -1,0 +1,15 @@
+## Practical 7 – Regression Trees
+
+This practical implements a regression tree from first principles using a greedy splitting strategy based on squared loss minimisation.
+
+### Key tasks
+- Represent tree nodes and regions
+- Evaluate squared loss before and after splits
+- Greedy selection of split feature and threshold
+- Recursive tree growth with a maximum number of leaf nodes
+- Prediction via tree traversal
+
+### Tools
+- Python
+- NumPy
+- Matplotlib

@@ -1,0 +1,15 @@
+## Practical 9 – K-Means Clustering
+
+This practical implements the K-means clustering algorithm from first principles and evaluates clustering performance using cluster purity.
+
+### Key tasks
+- Implement K-means clustering with iterative centroid updates
+- Assign clusters using Euclidean distance
+- Evaluate clustering quality using purity
+- Visualise cluster assignments and centroids
+
+### Tools
+- Python
+- NumPy
+- SciPy
+- Matplotlib

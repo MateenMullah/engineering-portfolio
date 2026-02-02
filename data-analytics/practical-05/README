@@ -1,0 +1,16 @@
+## Practical 5 – Logistic Regression and Decision Boundaries
+
+This practical implements logistic regression for binary classification,
+including model training, evaluation, and visualisation of the decision boundary.
+
+### Key tasks
+- Data normalisation and splitting
+- Logistic regression from first principles
+- Negative log-likelihood and gradient computation
+- Prediction and accuracy evaluation
+- Visualisation of linear decision boundaries
+
+### Tools
+- Python
+- NumPy
+- Matplotlib

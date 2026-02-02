@@ -1,0 +1,5 @@
+# Data Engineering Projects
+
+This folder contains small data engineering projects focused on data ingestion, cleaning, transformation, and storage using Python.
+
+The projects here explore working with raw CSV files, external APIs, and columnar data formats such as Parquet.

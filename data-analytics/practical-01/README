@@ -1,0 +1,11 @@
+This practical implements simple linear regression 
+
+### Key tasks
+- Compute regression coefficients analytically
+- Implement slope and intercept calculation in Python
+- Visualise data points and fitted regression line
+
+### Tools
+- Python
+- NumPy
+- Matplotlib

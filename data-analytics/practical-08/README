@@ -1,0 +1,15 @@
+## Practical 8 – Decision Trees for Classification
+
+This practical implements a decision tree classifier from first principles using Gini impurity to guide greedy splitting.
+
+### Key tasks
+- Represent tree nodes and leaf predictions
+- Compute Gini impurity for classification
+- Evaluate candidate splits across features and thresholds
+- Grow a decision tree with a maximum number of leaf nodes
+- Predict class labels via recursive tree traversal
+
+### Tools
+- Python
+- NumPy
+- Matplotlib

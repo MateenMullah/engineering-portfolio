@@ -1,0 +1,16 @@
+## Practical 2 – Polynomial Regression
+
+This practical extends linear regression to quadratic and higher-order
+polynomial regression using least-squares estimation.
+
+### Key tasks
+- Implement least-squares regression using normal equations
+- Add quadratic features manually
+- Fit polynomial regression models of arbitrary degree
+- Compare manual implementations with scikit-learn utilities
+
+### Tools
+- Python
+- NumPy
+- Matplotlib
+- scikit-learn

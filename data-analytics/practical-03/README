@@ -1,0 +1,15 @@
+## Practical 3 – Regression Models and Error Metrics
+
+This practical explores regression modelling using training and test data,
+including simple, polynomial, and multiple linear regression.
+
+### Key tasks
+- Feature selection from multivariate datasets
+- Train/test data splitting
+- Linear and polynomial regression using scikit-learn
+- Evaluation using squared loss, MSE, and RMSE
+
+### Tools
+- Python
+- NumPy
+- scikit-learn

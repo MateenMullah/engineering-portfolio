@@ -1,0 +1,15 @@
+## Practical 4 – K-Nearest Neighbours Classification
+
+This practical investigates binary classification using the K-Nearest
+Neighbours (KNN) algorithm.
+
+### Key tasks
+- Implement KNN classification from scratch
+- Evaluate classification accuracy
+- Compare training and validation accuracy for different K values
+
+### Tools
+- Python
+- NumPy
+- SciPy
+- Matplotlib

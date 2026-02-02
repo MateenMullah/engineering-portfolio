@@ -1,0 +1,13 @@
+## Practical 6 – Softmax Regression for Multiclass Classification
+
+This practical implements softmax regression for multiclass classification from first principles, including training via gradient descent and detailed performance evaluation.
+
+### Key tasks
+- Implement softmax regression with numerical stability
+- Optimise model parameters using gradient descent
+- Predict class labels using maximum class probability
+- Evaluate performance using accuracy, confusion matrix, precision, and recall
+
+### Tools
+- Python
+- NumPy

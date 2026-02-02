@@ -1,0 +1,44 @@
+## PV Hosting Capacity Monte Carlo Time-Series Script
+
+This script runs quasi-static time-series (QSTS) simulations in OpenDSS to evaluate photovoltaic (PV) hosting capacity on low-voltage distribution feeders using a Monte Carlo approach.
+
+The script automates:
+- Random PV placement on load buses
+- Time-series simulation over a 24-hour period
+- Voltage, voltage unbalance (VUF), and thermal limit checks
+- Extraction of feeder, line, load, and substation metrics
+- Export of results to CSV files and summary plots
+
+## Requirements
+
+- OpenDSS (installed with COM interface enabled)
+- Python 3.x
+- Python packages:
+  - numpy
+  - matplotlib
+  - pywin32
+
+## Key User-Configurable Parameters
+
+The following parameters should be modified by the user depending on the
+feeder and study scenario:
+- `START_HOUR`, `END_HOUR`, `TIMESTEP_MIN` – Simulation time settings
+- `LOAD_SCALE_FACTOR` – Load scaling applied to the feeder
+- `N_PV_SITES` – Number of PV systems to install
+- `PV_BASE_KW` – Base PV system size
+- `PV_SCALE_FACTORS` – PV penetration scenarios
+- `ENABLE_VOLTVAR` – Enable/disable Volt/Var control
+- `VMIN_LIM`, `VMAX_LIM`, `VUF_MAX` – Network constraint limits
+
+---
+
+## How to Run
+
+1. Update the file paths and parameters in the **USER SETTINGS** section.
+2. Ensure the selected OpenDSS feeder compiles without errors.
+3. Run the script:
+   python run_pv_hosting_capacity_qsts.py
+
+## Use of AI Assistance
+
+Parts of this script were developed with the assistance of AI-based tools for code structuring and debugging. All modelling decisions, simulation logic, and result interpretation were developed and validated by the author.

@@ -1,0 +1,54 @@
+# Weather Data ETL Pipeline (CSV → Parquet)
+
+## Overview
+This project implements a simple **ETL (Extract, Transform, Load)** pipeline using Python and Polars.
+
+The pipeline ingests raw weather data from a CSV file, cleans and transforms the dataset, and writes the processed data to **Parquet**
+
+This project focuses on:
+- column-level transformations
+- datetime parsing
+- schema validation
+- producing analytics-ready data
+
+---
+
+## Tech Stack
+- **Python**
+- **Polars** (DataFrame library)
+- **Parquet** (columnar file format)
+
+---
+
+## Data Source
+The input dataset is a historical weather CSV file containing hourly measurements such as:
+- temperature
+- humidity
+- wind speed
+- pressure
+- timestamp
+
+---
+
+## Pipeline Steps
+
+### 1. Extract
+- Read raw CSV data using Polars
+
+### 2. Transform
+- Clean column names (lowercase, snake_case, remove special characters)
+- Parse timestamp strings into proper `Datetime` type
+- Derive additional columns:
+  - `date`
+  - `hour`
+- Validate schema and check for missing values
+- Drop rows with invalid timestamps
+
+### 3. Load
+- Write the cleaned dataset to a **Parquet file**
+
+---
+
+## Output
+The final output is a Parquet file:
+

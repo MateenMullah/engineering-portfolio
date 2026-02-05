@@ -1,0 +1,36 @@
+# Weather API Pipeline (Open-Meteo → Parquet → PostgreSQL via Docker) [WIP]
+
+## Overview
+This project ingests hourly weather data from the **Open-Meteo API**, transforms it into a clean tabular dataset using **Polars**, and writes an analytics-ready **Parquet** output.
+
+Next planned step: load the processed dataset into **PostgreSQL** running in **Docker** and validate with SQL queries.
+
+Status: **Work in progress** (API ingestion + Parquet export completed).
+
+---
+
+## Tech Stack
+- Python
+- Requests (HTTP)
+- Polars (data transformation)
+- Parquet (processed output)
+- Docker + PostgreSQL (planned)
+
+---
+
+## What the Pipeline Does
+
+### Extract
+- Calls the Open-Meteo Forecast API (hourly temperature for a specified latitude/longitude)
+
+### Transform
+- Builds a table from `hourly.time` and `hourly.temperature_2m`
+- Parses `time` from string → Datetime
+- Derives:
+  - `date`
+  - `time_of_day`
+- Cleans column names to snake_case
+
+### Output
+- Writes a processed Parquet file:
+  - `weather_API.parquet`

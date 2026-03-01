@@ -1,0 +1,25 @@
+# Project 3 — Hotel Revenue Database + Power BI Dashboard (WIP)
+
+This project loads historical hotel booking data from Excel into a PostgreSQL database running in Docker.  
+The database is designed with a main `bookings` table and lookup tables for meal costs and market segment discounts.  
+The goal is to build a clean SQL layer for analytics and then create a Power BI dashboard on top.
+
+## Tech Stack
+- Python (pandas, psycopg)
+- PostgreSQL (Docker)
+- Power BI (dashboard)
+
+## Dataset
+Excel workbook includes:
+- `2018`, `2019`, `2020` sheets (booking-level data)
+- `meal_cost` sheet (meal code -> cost)
+- `market_segment` sheet (segment -> discount)
+
+> The Excel file is not committed to the repository.  
+> Place it locally and update the `EXCEL_PATH` variables in the scripts.
+
+## Project Structure
+- `docker-compose-hotel.yml` — starts PostgreSQL container
+- `create_hotel_table.py` — creates tables + foreign key constraints
+- `load_lookups.py` — loads lookup tables from Excel (`meal_cost`, `market_segment_discount`)
+- `load_bookings.py` — loads all booking rows (2018–2020) into `bookings`

@@ -15,11 +15,9 @@ Excel workbook includes:
 - `meal_cost` sheet (meal code -> cost)
 - `market_segment` sheet (segment -> discount)
 
-> The Excel file is not committed to the repository.  
-> Place it locally and update the `EXCEL_PATH` variables in the scripts.
-
 ## Project Structure
 - `docker-compose-hotel.yml` — starts PostgreSQL container
 - `create_hotel_table.py` — creates tables + foreign key constraints
 - `load_lookups.py` — loads lookup tables from Excel (`meal_cost`, `market_segment_discount`)
 - `load_bookings.py` — loads all booking rows (2018–2020) into `bookings`
+- `load_revenue.py` — calculates revenue by hotel type and year and stores it in `hotel_revenue`

@@ -8,7 +8,7 @@ with psycopg.connect(CONN_INFO) as conn:
         CREATE TABLE IF NOT EXISTS meal_cost (
             meal TEXT PRIMARY KEY,
             cost DOUBLE PRECISION NOT NULL
-        );
+        );  
         """)
 
         cur.execute("""
@@ -53,6 +53,15 @@ with psycopg.connect(CONN_INFO) as conn:
             reservation_status_date DATE
         );
         """)
+        
+        cur.execute("""
+        CREATE TABLE IF NOT EXISTS hotel_revenue (
+            hotel_type text, 
+            year int,
+            revenue double precision,
+            PRIMARY KEY (hotel_type, year)       
+                    );
+                    """)
 
         # 3) Drop constraints if they exist (so script can be re-run safely) chatGPT gave me this to fix my code im kinda confused but it works so YAY
         cur.execute("""

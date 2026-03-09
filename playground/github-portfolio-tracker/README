@@ -1,0 +1,16 @@
+# GitHub Project Tracker
+
+This project is a small automation tool that scans a GitHub repository to detect new completed projects. (WIP)
+
+The script connects to the GitHub API and inspects specific folders in the repository that contain portfolio projects. It identifies project directories, reads their README files, and determines whether a project is complete or still marked as a work in progress.
+
+The goal of this tool is to automate part of the portfolio workflow by detecting when a project has been completed and preparing information that can later be used to automatically generate LinkedIn posts summarizing the work.
+
+This project is currently focused on:
+
+* connecting to the GitHub API using PyGithub
+* scanning repository folders for project directories
+* identifying project README files
+* building logic to detect completed projects
+
+Future development will include generating AI-written summaries and automatically creating LinkedIn draft posts for newly completed projects.

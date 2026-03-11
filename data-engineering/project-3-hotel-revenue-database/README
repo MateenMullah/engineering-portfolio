@@ -1,4 +1,4 @@
-# Project 3 — Hotel Revenue Database + Power BI Dashboard (WIP)
+# Project 3 — Hotel Revenue Database + Power BI Dashboard
 
 This project loads historical hotel booking data from Excel into a PostgreSQL database running in Docker.  
 The database is designed with a main `bookings` table and lookup tables for meal costs and market segment discounts.  
